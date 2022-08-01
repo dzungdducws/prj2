@@ -1,0 +1,258 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+input {
+    padding: 10px;
+}
+
+body>div {
+    padding: 0px 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    background: #76b852;
+}
+
+.header-mid input {
+    border: none;
+}
+
+.btn_diff {
+    float: right;
+    border: unset;
+    border-radius: unset;
+}
+
+.header-right,
+.header-right>div {
+    display: flex;
+    align-items: center;
+}
+
+.header-right>div {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    background: #ffffff;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 50%;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-list a {
+    color: #000000;
+}
+
+.product-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #76b852;
+    border-radius: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #76b852;
+    box-sizing: border-box;
+}
+
+.product-detail>* {
+    padding: 10px 0 10px 0;
+}
+
+.product-detail img {
+    width: 450px;
+    height: 300px;
+}
+
+.product-detail>div {
+    padding-left: 10px;
+    width: 50%;
+    border-left: 5px solid #76b852;
+}
+
+.product-detail .btn,
+form .btn {
+    padding: 10px;
+    background: #21825c;
+    color: #ffffff;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note div {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.note div:nth-child(1)::before {
+    position: absolute;
+    transform: translate(-125%, 0);
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #ffcdab;
+    border-radius: 1px;
+    border: 1px solid #EDD2F3;
+}
+
+.note div:nth-child(2)::before {
+    position: absolute;
+    transform: translate(-125%, 0);
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #a4d792;
+    border-radius: 1px;
+    border: 1px solid #EDD2F3;
+}
+
+.note div:nth-child(3)::before {
+    position: absolute;
+    transform: translate(-125%, 0);
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #21825c;
+    border-radius: 1px;
+    border: 1px solid #EDD2F3;
+}
+
+th {
+    background: #21825c;
+    color: #ffffff;
+}
+
+th>div {
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last_th {
+    text-align: unset;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background: #ffffff;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #EDD2F3;
+    border-radius: 5px;
+}
+
+.selected {
+    background: #ffcdab;
+    position: relative;
+    z-index: 2;
+}
+
+.selected::after {
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #ffcdab;
+    z-index: 2;
+    opacity: .5;
+}
+
+td:hover {
+    background: #a4d792;
+}
+
+.choose {
+    background: #76b852;
+}
+
+.table_diff_1 {
+    width: 100%;
+    display: table;
+}
+
+.table_diff {
+    display: unset;
+}
+
+.table_diff td {
+    height: unset;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.section {
+    padding-bottom: 60px;
+}
+
+.hidden {
+    display: none;
+}
